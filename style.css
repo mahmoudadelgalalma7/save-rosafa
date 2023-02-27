@@ -1,0 +1,128 @@
+/* Add custom CSS styles below */ 
+
+.header-block--nav-wrapper,
+header#site-header-outer,
+.top-header,
+header.fixed-header .site-header,
+footer.footer {
+  background-color:#48c3b0;
+}
+.nav-desktop ul .menu-item>a, .nav-desktop ul .menu-item:not(.mega-menu) .sub-menu ul li a,
+header .site-header__cart a,
+.s-cart-summary-icon svg,
+.top-header .top-header__info li span,
+.top-header .top-header__info li i,
+.header-side-panel-trigger,
+footer .title--has-dash,
+.footer .footer-list li a  {
+  color:#FFF ;
+  fill:#FFF;
+}
+.nav-desktop ul .menu-item .offers-link{
+  color:#000 !important;
+  font-weight:bold;
+}
+
+section:nth-of-type(2){
+  padding:0 !important;
+  margin:0px 0px 10px 0px;
+}
+section:nth-of-type(2) .banner--fixed {
+  border-radius:0px 0px 8px 8px;
+}
+section:nth-of-type(2) .container {
+  margin:0 !important;
+  padding:0 !important;
+  width:100% !important;
+  min-width: 100%
+}
+/* Categories */
+.banner--square {
+    border-radius: 25px 25px 0px 0px;
+}
+
+section:nth-of-type(12).home-block--square-images {
+  padding-bottom:0 !important;
+}
+section:nth-of-type(13).home-block--square-images {
+  padding-top:0 !important;
+}
+section:nth-of-type(12).home-block--square-images .col-md-4,
+section:nth-of-type(13).home-block--square-images .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+
+
+
+
+
+
+
+/* Details */
+@keyframes pupup {
+0%{
+    transform:scale(1)
+    }
+18%{
+    transform:scale(1)
+    }
+80%{
+    transform:scale(1)
+    }
+100%{
+    transform:scale(0)
+    }
+}
+
+@keyframes pupup_logo{
+0%{
+    transform:scale(0)
+    }
+18%{
+    transform:scale(1)
+    }
+75%{
+    transform:scale(1)
+    }
+95%{
+    transform:scale(0)
+    }
+100%{
+    transform:scale(0)
+    }
+}
+
+body:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00313c;
+    position: fixed;
+    z-index: 999999;
+    transform: scale(0);
+    animation-name: pupup;
+    animation-duration: 2s;
+    background:url('https://i.postimg.cc/8PYJL7SH/image.png');
+    background-size:100% 100%;
+}
+
+body:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999999;
+    background: url('https://i.postimg.cc/RCcH5SwC/Capture-removebg-preview.png');
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 165px;
+    transform: scale(0);
+    animation-name: pupup_logo;
+    animation-duration: 2s;
+    visibility: visible;
+    opacity:1;
+}
